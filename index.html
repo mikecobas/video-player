@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Video Player</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <video id="video" poster="images/poster.jpg" src="https://media.w3.org/2010/05/sintel/trailer.mp4"  muted repeat></video>
+            <h2 class="player-title">Música para programar</h2>
+            <div class="player-overlay">
+                <div class="player-actions">
+                    <button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+                    <button class="button" id="play" aria-label="Reproducir video" title="Reproducir video"></button>
+                    <button class="button" id="pause" hidden aria-label="Pausar video" title="Pausar video"></button>
+                    <button class="button" id="forward" aria-label="Avanzar 10 segundos" title="Avanzar 10 segundos"></button>
+                </div>
+                <div class="player-audio">
+                    <button class="button" id="unmute" hidden aria-label="Silenciar" title="Silenciar"></button>
+                    <button class="button" id="mute"  aria-label="Activar sonido" title="Activar sonido"></button>
+                    <button class="button" id="pip"  aria-label="Minireproductor" title="Minireproductor"></button>
+                    <button class="button" id="fullscreen"  aria-label="Pantalla completa" title="Pantalla completa"></button>
+                    
+                </div>
+                <div class="player-progress">
+                    <input id='progress' type="range" min="0" value="0" step=".1">
+                    <span id="duration"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/index.js">
+        
+    </script>
+</body>
+</html>
